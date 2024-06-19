@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Karier Sebelas</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+  <!-- css assets  -->
+  <link rel="stylesheet" href="assets/css/app.css" />
+  <link rel="stylesheet" href="assets/css/themes/dark/app-dark.css" />
+  <link rel="stylesheet" href="assets/css/pages/auth.css" />
+  <!-- end css assets  -->
+</head>
+
+<body>
+  <div id="auth">
+    <div class="row h-100">
+      <!-- left side  -->
+      <div class="col-lg-5 col-12">
+        <div id="auth-left">
+          <div class="auth-logo mb-4 text-center">
+            <a href="#">
+              <img src="assets/static/images/logo/LogoLight.png" alt="KarirSebelas" style="width: auto; height: 8rem;">
+            </a>
+          </div>
+
+          <form action="" method="POST">
+            <!-- input email  -->
+            <div class="form-group position-relative has-icon-left mb-4">
+              <input type="email" name="email" require class="form-control form-control-xl" placeholder="Email" />
+              <div class="form-control-icon">
+                <i class="bi bi-person"></i>
+              </div>
+            </div>
+            <!-- end input email  -->
+
+            <!-- input password  -->
+            <div class="form-group position-relative has-icon-left mb-4">
+              <input type="password" name="password" require class="form-control form-control-xl"
+                placeholder="Password" />
+              <div class="form-control-icon">
+                <i class="bi bi-shield-lock"></i>
+              </div>
+            </div>
+            <!-- end input password  -->
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-4">Log in</button>
+          </form>
+
+          <a href="pages/admin/index.html">Admin</a> |
+          <a href="pages/perusahaan/index.html">Perusahaan</a> |
+          <a href="pages/alumni/index.html">Alumni</a> |
+
+
+          <!-- <div class="text-center mt-3 text-lg fs-4">
+            <p class="text-gray-600">Tidak Memiliki Akun ? Coba<a href="cekData.html" class="font-bold"> Cek Data</a>.
+            </p>
+            <p><a class="font-bold" href="auth-forgot-password.html">Forgot password?</a>.</p>
+          </div> -->
+        </div>
+      </div>
+      <!-- end left side  -->
+
+      <!-- right side  -->
+      <div class="col-lg-7 d-none d-lg-block">
+        <div id="auth-right"></div>
+      </div>
+      <!-- end right side  -->
+    </div>
+  </div>
+
+  <!-- script assets  -->
+  <script src="assets/static/js/initTheme.js"></script>
+  <script src="assets/static/js/components/dark.js"></script>
+  <!-- end script assets  -->
+</body>
+
+</html>

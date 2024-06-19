@@ -1,0 +1,3 @@
+$('#tableLog').DataTable({
+    responsive: true,
+});

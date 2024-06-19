@@ -1,0 +1,125 @@
+{
+    "user" : [
+      {
+        "name": "Menu",
+        "isTitle": true
+      },
+      {
+        "name": "Dashboard",
+        "url": "alumni-index",
+        "icon": "grid-fill"
+      },
+      {
+        "name": "Loker",
+        "url": "alumni-loker-read",
+        "icon": "newspaper"
+      },
+      {
+        "name": "Akun",
+        "isTitle": true
+      },
+      {
+        "name": "Profil",
+        "url": "alumni-profil-read",
+        "icon": "person-circle"
+      },
+      {
+        "name": "Lamaran",
+        "url": "alumni-lamaran-read",
+        "icon": "file-earmark"
+      }
+    ],
+    "admin" : [
+      {
+        "name": "Menu",
+        "isTitle": true
+      },
+      {
+        "name": "Dashboard",
+        "url": "admin.index",
+        "icon": "grid-fill"
+      },
+      {
+        "name": "Data Users",
+        "key": "data-users",
+        "icon": "file-earmark-spreadsheet-fill",
+        "submenu": [
+          {
+            "name": "Alumni",
+            "key": "data",
+            "url": "#",
+            "submenu": [
+              {
+                "name": "Create",
+                "url": "admin.alumni.create"
+              },
+              {
+                "name": "Read",
+                "url": "admin.alumni.index"
+              }
+            ]
+          },
+          {
+            "name": "Perusahaan",
+            "key": "data",
+            "url": "#",
+            "submenu": [
+              {
+                "name": "Create",
+                "url": "admin.perusahaan.create"
+              },
+              {
+                "name": "Read",
+                "url": "admin.perusahaan.index"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "perusahaan" : [
+      {
+        "name": "Menu",
+        "isTitle": true
+      },
+      {
+        "name": "Dashboard",
+        "url": "perusahaan.index",
+        "icon": "grid-fill"
+      },
+      {
+        "name": "Loker",
+        "key": "loker",
+        "icon": "newspaper",
+        "submenu": [
+          {
+            "name": "Create",
+            "url": "perusahaan.lowonganPekerjaan.create"
+          },
+          {
+            "name": "Read",
+            "url": "perusahaan.lowonganPekerjaan.index"
+          }
+        ]
+      },
+      {
+        "name": "Lamaran",
+        "key": "lamaran",
+        "icon": "file-earmark",
+        "submenu": [
+          {
+            "name": "Baru",
+            "url": "perusahaan.lamaran.index"
+          },
+          {
+            "name": "Diterima",
+            "url": "perusahaan.lamaran.diterima"
+          },
+          {
+            "name": "Ditolak",
+            "url": "perusahaan.lamaran.ditolak"
+          }
+        ]
+      }
+    ]
+  }
