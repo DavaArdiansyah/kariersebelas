@@ -7,6 +7,7 @@
   <title>Dashboard - Karier Sebelas</title>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <!-- css assets  -->
   <link rel="stylesheet" href="../../assets/css/app.css" />
   <link rel="stylesheet" href="../../assets/css/themes/dark/app-dark.css" />
@@ -145,7 +146,8 @@
             <!-- main content -->
             <div class="card">
               <div class="card-header">
-                <h4>Semua Pengguna Yang Baru Bergabung di tahun 2024</h4>
+                <h4>Semua Pengguna Yang Baru Bergabung di</h4>
+                <h4>10 Oktober 2016 sampai 20 Oktober 2016</h4>
                 <div class="row py-3">
                   <div class="col-3">
                     <select class="form-select choices" id="tahun" name="tahun">
@@ -169,11 +171,7 @@
                     </select>
                   </div>
                   <div class="col-3">
-                    <select class="form-select choices" id="tahun" name="tahun">
-                      <option value="2024" selected>2024</option>
-                      <option value="2023">2023</option>
-                      <option value="2022">2022</option>
-                    </select>
+                    <input type="date" class="form-control flatpickr-range-preloaded" placeholder="Select date..">
                   </div>
                 </div>
               </div>
@@ -259,11 +257,13 @@
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <!-- script assets  -->
   <script src="../../assets/static/js/initTheme.js"></script>
   <script src="../../assets/static/js/components/dark.js"></script>
   <script src="../../assets/js/app.js" type="module"></script>
   <script src="../../components/chart/perusahaan.js"></script>
+  <script src="../../components/datepicker.js"></script>
   <!-- end script assets  -->
 </body>
 

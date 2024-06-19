@@ -1,19 +1,18 @@
 // Data untuk chart bar
 const labels = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  const dataLamaran = [14, 5, 10, 9, 6];
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "20",
+];
+  const dataLamaran = [14, 5, 10, 9, 6, 4, 6, 8, 5, 2];
 
   const options = {
     annotations: {
